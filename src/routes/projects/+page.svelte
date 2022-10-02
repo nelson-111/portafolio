@@ -1,6 +1,8 @@
 <title>Nelson's projects</title>
 
 <script lang="ts" defer>
+  import {github_icon} from '$lib/ts/icons'
+
   let projects = fetch('https://api.github.com/users/nelson-111/repos',
   {
     method: 'GET',
@@ -24,7 +26,16 @@
       <hr class="border-[color:var(--color-1)] border-[0.1vmax] drop-shadow-[0_0_0.25vmax_var(--color-1)] m-[1.5vmax]">
 
       {project.description}
+
+      <hr class="border-[color:var(--color-1)] border-[0.1vmax] drop-shadow-[0_0_0.25vmax_var(--color-1)] m-[1.5vmax]">
+
+      <div class="flex justify-evenly">
+        <a href={project.html_url} title={project.name + ' github'}>
+          <div class="icon px-[20vw]">{@html github_icon}</div>
+        </a>
+      </div>
     </a>
+
     {/each}
   </section>
 {/await}
