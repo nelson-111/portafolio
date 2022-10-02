@@ -9,6 +9,7 @@ function randoms_sum(max_value: number, number_length: number){
   while(index <= number_length)
   {
     result += random(max_value / number_length)
+    index += 1
   }
 
   return result
