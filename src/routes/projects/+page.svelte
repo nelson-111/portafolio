@@ -1,11 +1,17 @@
 <title>Nelson's projects</title>
 
+<script context="module">
+  export const variables = {
+    base_path: import.meta.env.VITE_GITHUB_API_TOKEN
+  }
+</script>
+
 <script lang="ts" defer>
   let projects = fetch('https://api.github.com/users/nelson-111/repos',
   {
     method: 'GET',
     headers: {
-      'Authorization': `token ${import.meta.env.VITE_GITHUB_API_TOKEN}`,
+      'Authorization': `token ${variables.base_path}`,
     }
   })
   .then(result => result.json())

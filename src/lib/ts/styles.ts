@@ -16,7 +16,7 @@ function randoms_sum(max_value: number, number_length: number){
 }
 
 function hsl_for_bg() {
-  return `hsl(${randoms_sum(360, 20)} ${random(70, 20)}% ${randoms_sum(8, 8)}%)`
+  return `hsl(${randoms_sum(360, 20)} ${random(70, 20)}% ${randoms_sum(15, 5)}%)`
 }
 
 const style_variables = {
