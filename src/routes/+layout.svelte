@@ -1,6 +1,6 @@
 <script lang="ts" defer>
   import '../app.css'
-  import {style_values} from '../ts/styles'
+  import {style_values} from '$lib/ts/styles'
 </script>
 
 <main style={style_values} class="bg-[image:var(--bg-gradient)] w-auto h-auto p-[2vmax] selection_bg-white selection_text-black">

@@ -1,6 +1,8 @@
+<title>Nelson Ricaurte</title>
+
 <script lang="ts" defer>
-  import {contacts} from '../ts/contacts'
-  import {stack, interested_on} from '../ts/my-stack'
+  import {contacts} from '$lib/ts/contacts'
+  import {stack, interested_on} from '$lib/ts/my-stack'
 </script>
 
 <h1 class="text-[5vmax] mb-[1vmax]" title="greeting">Hello, I'm Nelson</h1>
