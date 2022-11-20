@@ -3,11 +3,14 @@
 <script lang="ts" defer>
   import {github_icon} from '$lib/ts/icons'
 
+  let token = process.env.NODE_ENV === 'production'
+  ? process.env.VITE_GITHUB_API_TOKEN : import.meta.env.VITE_GITHUB_API_TOKEN
+
   let projects = fetch('https://api.github.com/users/nelson-111/repos',
   {
     method: 'GET',
     headers: {
-      'Authorization': `token ${import.meta.env.VITE_GITHUB_API_TOKEN}`,
+      'Authorization': `token ${token}`,
     }
   })
   .then(result => result.json())
