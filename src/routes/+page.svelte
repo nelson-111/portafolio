@@ -8,7 +8,7 @@
 <h1 class="text-[5vmax] mb-[1vmax]" title="greeting">Hello, I'm Nelson</h1>
 
 <p class="text-size" title="Nelson resume">
-  I'm a student, learning about web development, the technologies that I like and the new ones that can be serious alternatives in the future
+  I'm a student, learning about web development, the technologies that I like and the new ones that can be serious options in the future
 </p>
 
 <h1 class="second-h1">Social media</h1>
