@@ -10,36 +10,19 @@ function random(range: number, adjuster = 0)
 }
 
 /**
- * Makes an iteration that sums a fractioned random number, so the randomness is "purer"
- * @param range The maximum random number
- * @param fraction The number of parts is divided the range
- * @returns A random number
- */
-function fractionedRandom(range: number, fraction: number)
-{
-  let index = 0
-  let result = 0
-
-  while(index <= fraction)
-  {
-    result += random(range / fraction)
-    index += 1
-  }
-
-  return result
-}
-
-/**
  * @returns A hsl value with random numbers
  */
-function BgHsl()
+function randomHSL()
 {
-  return `hsl(${fractionedRandom(360, 5)} ${random(70, 20)}% ${fractionedRandom(15, 5)}%)`
+  return `hsl(${random(360 * 4)} ${random(45, 45)}% ${random(15, 5)}%)`
 }
 
+/*
+The code below creates a object of strings, these strings are used for css variables
+*/
 const style_variables = {
-  'color-1': `hsl(${fractionedRandom(360, 2)} 100% ${random(5, 90)}%)`,
-  'bg-gradient': `linear-gradient(${fractionedRandom(360, 5)}deg, ${BgHsl()}, ${BgHsl()}, ${BgHsl()})`,
+  'color-1': `hsl(${random(360 * 4)} 100% ${random(5, 90)}%)`,
+  'bg-gradient': `linear-gradient(${random(360 * 4)}deg, ${randomHSL()}, ${randomHSL()}, ${randomHSL()})`,
   'shadow': '0 0 0.5vmax var(--color-1)',
   'text-size': 'clamp(2vh, 4vh, 2.5vmax)'
 }
