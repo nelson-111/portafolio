@@ -24,7 +24,7 @@
 {:then result}
   <section class="grid gap-[2vmax]">
     {#each result as project}
-    <a href={project.homepage} class="text-size p-[0.6ch] bg-[image:var(--bg-gradient)] drop-shadow-[0_0_0.3vmax_var(--color-1)]" title={project.name} loading="lazy">
+    <a href={project.homepage} class="text-size p-[0.6ch] bg-[image:var(--bg-gradient)] drop-shadow-[0_0_0.3vmax_var(--color-1)]" title={project.name}>
       <p class="text-[3vmax]">{project.name}</p>
 
       <hr class="border-[color:var(--color-1)] border-[0.1vmax] drop-shadow-[0_0_0.25vmax_var(--color-1)] m-[1.5vmax]">
