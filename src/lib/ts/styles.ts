@@ -4,22 +4,18 @@
  * @param adjuster The minimum of the range
  * @returns A random number
  */
-function random(range: number, adjuster = 0)
-{
+function random(range: number, adjuster = 0) {
   return Math.floor(Math.random() * range + adjuster)
 }
 
 /**
  * @returns A hsl value with random numbers
  */
-function randomHSL()
-{
+function randomHSL() {
   return `hsl(${random(360 * 4)} ${random(45, 45)}% ${random(15, 5)}%)`
 }
 
-/*
-The code below creates a object of strings, these strings are used for css variables
-*/
+// The code below creates a object of strings, these strings are used for css variables
 const style_variables = {
   'color-1': `hsl(${random(360 * 4)} 100% ${random(5, 90)}%)`,
   'bg-gradient': `linear-gradient(${random(360 * 4)}deg, ${randomHSL()}, ${randomHSL()}, ${randomHSL()})`,

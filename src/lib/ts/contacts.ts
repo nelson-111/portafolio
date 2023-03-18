@@ -11,9 +11,4 @@ export const contacts = [
     href: 'https://stackoverflow.com/users/17968408/another-nelson?tab=profile',
     icon: stack_overflow_icon
   },
-  {
-    alt: 'Reddit',
-    href: 'https://www.reddit.com/user/Nelson_Clone_1042',
-    icon: reddit_icon
-  }
 ]
