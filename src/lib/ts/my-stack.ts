@@ -28,24 +28,12 @@ export const stack = [
     href: "https://svelte.dev"
   },
   {
-    alt: 'Lighthouse',
-    href: "https://developer.chrome.com/blog/lighthouse-load-performance/",
-  },
-  {
-    alt: 'npm',
-    href: "https://www.npmjs.com/"
-  },
-  {
     alt: 'pnpm',
     href: "https://pnpm.io/"
   },
-  ],
+],
 
-  interested_on = [
-  {
-    alt: 'GunJS',
-    href: "https://gun.eco/"
-  },
+interested_on = [
   {
     alt: 'Python',
     href: "https://www.python.org/"
@@ -63,16 +51,8 @@ export const stack = [
     href: "https://ziglang.org/"
   },
   {
-    alt: 'Crystal',
-    href: "https://crystal-lang.org/"
-  },
-  {
     alt: 'Rust',
     href: "https://www.rust-lang.org/"
-  },
-  {
-    alt: 'Elixir',
-    href: "https://elixir-lang.org"
   },
   {
     alt: 'Bun',
